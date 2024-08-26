@@ -14,7 +14,7 @@ setup(
     ],
     entry_points={
         'certbot.plugins': [
-            'dns-dnspod-global = dnspod_global:DnspodGlobalAuthenticator',
+            'dns-dnspod-global = certbot_dns_dnspod_global.dnspod_global:DnspodGlobalAuthenticator',
         ],
     },
 )
