@@ -12,3 +12,9 @@ pip install git+https://github.com/NGELDragon/certbot-dns-dnspod-global.git
 dns_dnspod_api_id = "your-api-id"
 dns_dnspod_api_token = "your-api-token"
 ```
+# Certbot
+```linux
+sudo certbot certonly --authenticator dns-dnspod-global \
+  --dns-dnspod-global-credentials /etc/letsencrypt/dnspod.ini \
+  -d example.com -d "*.example.com"
+```
