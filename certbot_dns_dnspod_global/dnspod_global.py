@@ -42,7 +42,15 @@ class DnspodGlobalClient:
             'record_id': record_id,
         }
         return self._make_request(action, data)
-
+        
+    def list_records(self, domain, sub_domain, record_type='TXT'):
+        action = 'Record.List'
+        data = {
+            'domain': domain,
+            'sub_domain': sub_domain,
+            'record_type': record_type,
+        }
+        return self._make_request(action, data)
 
 class DnspodGlobalAuthenticator(DNSAuthenticator):
     description = 'Obtain certificates using a DNS TXT record (if you are using DNSPod for DNS).'
