@@ -3,7 +3,7 @@ certbot-dns-dnspod-global,  api.dnspod.com
 
 # Installing
 ```linux
-$pip install git+https://github.com/NGELDragon/certbot-dns-dnspod-global.git
+pip install git+https://github.com/NGELDragon/certbot-dns-dnspod-global.git
 ```
 
 # INI File
